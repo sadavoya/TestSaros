@@ -17,7 +17,7 @@ class Bar(Foo):
         return super(Bar, self).__str__() + ", Age: " + self.age.__str__()
 
 def run():
-    foo = Foo("Jeff")
+    foo = Foo("Aren")
     bar = Bar("Drew", 39)
     print foo
     print bar
