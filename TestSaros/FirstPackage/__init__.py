@@ -16,11 +16,20 @@ class Bar(Foo):
     def __str__(self):
         return super(Bar, self).__str__() + ", Age: " + self.age.__str__()
 
+class Baz(Bar):
+    def __init__(self, name, age, sex):
+        super(Baz, self).__init__(name, age)
+        self.sex = sex
+    def __str__(self):
+        return super(Baz, self).__str__() + ", Sex: " + self.sex.__str__()
+    
 def run():
-    foo = Foo("Aren")
-    bar = Bar("Drew", 39)
+    foo = Foo("Alice")
+    bar = Bar("Bob", 30)
+    baz = Baz("Charlie", 21, "Male")
     print foo
     print bar
+    print baz
     
 
 if __name__ == '__main__':

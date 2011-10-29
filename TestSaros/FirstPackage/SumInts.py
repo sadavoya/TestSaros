@@ -26,7 +26,8 @@ def test_sum_ints():
         assert1(sum_ints([[[[3]]]]), 3, 7) +
         assert1(sum_ints([[2], 3, [[4, 5, 'a']]]), 14, 8) +
         assert1(sum_ints({1: 2, 3: 4}), 0, 9) +
-        assert1(sum_ints((1, 2, 3, 4)), 0, 10) == 0):
+        assert1(sum_ints((1, 2, 3, 4)), 0, 10) == 0 +
+        assert1(sum_ints((1, 2, 3, 4, 5)), 0, 11) == 0) :
             print "no errors"
         
 
